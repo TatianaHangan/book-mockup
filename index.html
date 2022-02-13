@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS | Book Mockup</title>
+    <style>
+        .book {
+            /*border: 1px solid green;*/
+            width: 80%;
+            margin: 5% auto;
+            max-width: 900px;
+            min-width: 500px;
+        }
+        .col {
+            /*border: 1px solid blue;*/
+        }
+        .col-33 {
+            width: 13.33%;
+            float: right;
+            padding: 10%;
+        }
+        .col-66 {
+            width: 66.66%;
+            float: left;
+            /*background-color: brown;*/
+        }
+        .cover {
+            width: 93%;
+            margin-bottom: -4px;
+        }
+        .title {
+            font-size: 250%;
+            color: rgb(44, 63, 11);
+        }
+        .author {
+            font-size: 200%;
+            color: rgb(44, 63, 11);
+        }
+        .btn {
+            text-decoration: none;
+            background-color: rgb(44, 63, 11);
+            color: white;
+            padding: 5%;
+        }
+        .right {
+            text-align: right;
+        }
+        .book-bottom {
+            height: 30px;
+            width: 93%;
+            background-image: linear-gradient(black, white, black);
+            transform: skew(45deg);
+            transform-origin: top left;
+        }
+        .book-right {
+            background-image: linear-gradient(90deg, black, white, black);
+            height: 840px;
+            width: 7%;
+            float: right;
+            transform: skewY(45deg);
+            transform-origin: top left;
+        }
+    </style>
+</head>
+<body>
+    
+    <article class="book">
+        <div class="col col-33">
+        <h1 class="title">The <br> Flavor <br> Equation</h1>
+        <p class="author">Nik Sharma</p>  
+        <p class="right">price: 25.00 euros</p>
+        <p class="right"><a class="btn" href="https://www.amazon.es/Flavor-Equation-Science-Explained-Essential/dp/1452182698">BUY</a></p>
+        </div>
+
+        <div class="col col-66"> 
+            <img class="cover" src="512910_cover3_710586.jpg" alt="The Flavor Equation - cover">
+            <div class="book-right"></div>
+            <div class="book-bottom"></div>
+        </div>
+    </article>
+
+</body>
